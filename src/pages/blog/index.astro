@@ -5,7 +5,7 @@ import Footer from '../../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 
 //microCMS呼び出し
-import { getBlogs } from "../../library/microcms";
+import { getBlogs } from "../../Library/microcms";
 const response = await getBlogs({ fields: ["id", "title", "publishedAt"] });
 ---
 
